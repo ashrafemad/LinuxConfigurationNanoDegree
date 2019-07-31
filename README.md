@@ -23,7 +23,9 @@ http://18.196.124.97.xip.io/
 ## Configurations made
 - Registered for an AWS Lightsail server instance and chose the minimal plan
 - Added port 2200 as Custom and made sure it's accessible
-- Removed default SSH port 22
+- Disable `PAssword Authentication` and `PermitRootLogin
+` from `/etc/ssh/sshd_config` so only users with SSH Public keys can login and Disable Root log-in
+- Removed default SSH port 22 from Lightsail security and `/etc/ssh/sshd_config`
 - Installed Apache2 and displayed the test page successfully
 - Created `grader` user and added it to sudo group
 - Locally generated an SSH key for `grader` and added to server's `.ssh/authorized_keys` and tested logging in
