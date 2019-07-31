@@ -30,6 +30,7 @@ http://18.196.124.97.xip.io/
 - Created `grader` user and added it to sudo group
 - Locally generated an SSH key for `grader` and added to server's `.ssh/authorized_keys` and tested logging in
 - Cloned `Catalog App` from Github into `/var/www/catalog`
+- Created a Virtual environment using Virtualenv and installed all needed Packages
 - Created the WSGI file that runs app files
 - Updated `catalog_project.py` into `__init__.py` in order to start automatically and updated line `app.run(host='0.0.0.0', port=8000)` to be `app.run()`
 - Installed PostgreSQL
